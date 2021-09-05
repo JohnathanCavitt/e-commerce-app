@@ -1,0 +1,27 @@
+#nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #171a21;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-item {
+  float: left;
+}
+
+.nav-link {
+  display: block;
+  color: #b8b6b4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav-link:hover {
+  background-color: #111;
+}

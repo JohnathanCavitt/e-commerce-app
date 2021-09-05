@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #16202d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.item-image {
+  width: 80%;
+  height: auto;
+}
+
+.item-name {
+  color: #8650ac;
+  padding-bottom: 10px;
+}
+
+.price {
+  color: white;
+  padding-bottom: 20px;
+}
