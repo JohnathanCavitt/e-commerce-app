@@ -4,7 +4,7 @@ import ItemCard from "./ItemCard.js";
 const data = require("./items.json");
 let items = data;
 console.log(typeof items);
-let i = 56;
+console.log("test");
 function App() {
   return (
     <div className="App">
