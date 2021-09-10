@@ -22,12 +22,31 @@
   margin-left: 15px;
   margin-right: 15px;
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: #8650ac;
   padding-bottom: 10px;
 }
 
 .price {
   color: white;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
+}
+
+.add-to-cart {
+  color: #d2e885;
+  width: 100px;
+  height: 30px;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  background: #a4d007;
+  background: linear-gradient(to bottom, #a4d007 5%, #536904 95%);
+}
+
+.add-to-cart:hover {
+  color: white;
+  background: #a1bf05;
+  background: linear-gradient(to bottom, #a1bf05 5%, #80a005 95%);
 }
