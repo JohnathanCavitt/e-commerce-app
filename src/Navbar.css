@@ -1,4 +1,13 @@
 #nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -9,14 +18,21 @@
   width: 100%;
 }
 
+#first {
+  margin-left: 40px;
+}
+
 .nav-item {
   float: left;
 }
 
 .nav-link {
-  display: block;
+  /* display: block; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
   color: #b8b6b4;
-  text-align: center;
+  /* text-align: center; */
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -24,4 +40,10 @@
 /* Change the link color to #111 (black) on hover */
 .nav-link:hover {
   background-color: #111;
+}
+
+#shopping-cart {
+  height: 20px;
+  margin-left: auto;
+  margin-right: 40px;
 }
