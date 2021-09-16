@@ -5,7 +5,7 @@ function ItemCard(props) {
   const addToCart = (e, cartObj = "PLACEHOLDER") => {
     console.log(cartObj);
   };
-  let b = "hello world";
+  // let b = "hello world";
   return (
     <div className="card">
       <img src={props.imgLink} alt="" className="item-image" />
