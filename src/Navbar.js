@@ -7,7 +7,7 @@ function Navbar() {
     <nav id="nav">
       <ul id="nav-list">
         <li className="nav-item" id="first">
-          <a className="nav-link" href="default.asp">
+          <a className="nav-link" href="/">
             Home
           </a>
         </li>
