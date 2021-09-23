@@ -2,7 +2,8 @@ import React from "react";
 import "./ItemCard.css";
 
 function ItemCard(props) {
-  const addToCart = (e, cartObj = ["PLACEHOLDER"]) => {
+  let countVar = 0;
+  const addToCart = (e, cartObj = ["PLACEHOLDER"], count) => {
     let itemObj = {
       itemName: props.itemName,
       imgLink: props.imgLink,
@@ -10,7 +11,14 @@ function ItemCard(props) {
     };
     cartObj.push(itemObj);
     localStorage.setItem("objContainer", JSON.stringify(cartObj));
+    if (JSON.parse(localStorage.getItem("objContainer")) !== null) {
+      count = JSON.parse(localStorage.getItem("objContainer")).length;
+    } else {
+      count = 0;
+    }
+    console.log(count);
     console.log(cartObj);
+    return count;
   };
   return (
     <div className="card">
@@ -19,7 +27,9 @@ function ItemCard(props) {
       <p className="price">{props.price}</p>
       <button
         className="add-to-cart"
-        onClick={(e) => addToCart(e, props.cartContainer)}
+        onClick={(e) => {
+          props.getCounter(addToCart(e, props.cartContainer, countVar));
+        }}
       >
         Add to cart
       </button>

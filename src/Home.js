@@ -7,7 +7,8 @@ console.log(test);
 if (test === null) {
   test = [];
 }
-const Home = () => {
+
+const Home = (props) => {
   return (
     <div>
       <h1 id="test"> </h1>
@@ -20,6 +21,7 @@ const Home = () => {
               itemName={item.name}
               price={item.price}
               cartContainer={test}
+              getCounter={props.countFunc}
             />
           );
         })}

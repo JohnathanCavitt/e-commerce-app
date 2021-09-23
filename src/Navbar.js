@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import shopping_cart from "./test4.png";
 
-function Navbar() {
+function Navbar(props) {
   return (
     <nav id="nav">
       <ul id="nav-list">
@@ -27,6 +27,7 @@ function Navbar() {
           </a>
         </li>
         <input type="image" src={shopping_cart} alt="" id="shopping-cart" />
+        <p className="cart-text">{props.itemCounter}</p>
       </ul>
     </nav>
   );
