@@ -43,9 +43,11 @@
 }
 
 #shopping-cart {
-  height: 20px;
   margin-left: auto;
   margin-right: 2px;
+}
+#shopping-cart-img {
+  height: 20px;
 }
 
 .cart-text {

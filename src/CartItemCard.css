@@ -1,45 +1,44 @@
-#cart-main {
-  margin-top: 100px;
-}
-
-#cart-itemcard-container {
+.cart-card {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#checkout {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
   background-color: #16202d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
-  width: 30%;
-  padding-top: 20px;
+  width: 80%;
+  height: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 45px;
 }
-.amount {
-  color: white;
-  margin-bottom: 8px;
-}
-.tax {
-  color: white;
-  margin-bottom: 8px;
-}
-.total {
-  color: white;
-  margin-bottom: 8px;
+.cart-item-image {
+  width: 150px;
+  margin-right: 10%;
+  margin-left: 10%;
+  height: auto;
 }
 
-.cart-checkout {
+.cart-item-name {
+  color: #8650ac;
+  font-size: 20px;
+  /* margin-right: 5%; */
+}
+
+.cart-price {
+  color: white;
+  margin-left: auto;
+  margin-right: 5%;
+  font-size: 20px;
+}
+
+.cart-remove-from-cart {
   color: #d2e885;
   font-size: 17px;
-  width: 200px;
+  width: 150px;
   height: 50px;
-  margin-bottom: 20px;
+  /* margin-left: auto; */
+  margin-right: 5%;
   border-radius: 2px;
   outline: none;
   cursor: pointer;
@@ -49,7 +48,7 @@
   background: linear-gradient(to bottom, #a4d007 5%, #536904 95%);
 }
 
-.cart-checkout:hover {
+.cart-remove-from-cart:hover {
   color: white;
   background: #a1bf05;
   background: linear-gradient(to bottom, #a1bf05 5%, #80a005 95%);

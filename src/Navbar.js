@@ -26,7 +26,14 @@ function Navbar(props) {
             About
           </a>
         </li>
-        <input type="image" src={shopping_cart} alt="" id="shopping-cart" />
+        <a href="cart" id="shopping-cart">
+          <input
+            type="image"
+            src={shopping_cart}
+            alt=""
+            id="shopping-cart-img"
+          />
+        </a>
         <p className="cart-text">{props.itemCounter}</p>
       </ul>
     </nav>

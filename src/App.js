@@ -1,6 +1,7 @@
 import "./App.css";
 import React, { useState } from "react";
 import Home from "./Home.js";
+import Cart from "./Cart.js";
 import Navbar from "./Navbar.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -14,7 +15,12 @@ function App() {
   const [count, setCount] = useState(count1);
 
   const getCount = (countData) => {
-    setCount(countData);
+    console.log(countData, typeof countData);
+    if (typeof countData === "number") {
+      setCount(countData);
+    } else {
+      setCount(countData[0]);
+    }
   };
 
   return (
@@ -24,6 +30,9 @@ function App() {
         <Switch>
           <Route path="/" exact>
             <Home countFunc={getCount} />
+          </Route>
+          <Route path="/cart" exact>
+            <Cart countFunc={getCount} />
           </Route>
         </Switch>
       </div>
