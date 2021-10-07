@@ -2,6 +2,7 @@ import "./App.css";
 import React, { useState } from "react";
 import Home from "./Home.js";
 import Cart from "./Cart.js";
+import Checkout from "./Checkout.js";
 import Navbar from "./Navbar.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -33,6 +34,9 @@ function App() {
           </Route>
           <Route path="/cart" exact>
             <Cart countFunc={getCount} />
+          </Route>
+          <Route path="/checkout" exact>
+            <Checkout />
           </Route>
         </Switch>
       </div>

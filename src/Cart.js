@@ -44,7 +44,9 @@ const Cart = (props) => {
           <p className="amount">Amount: ${updateAmount.toFixed(2)}</p>
           <p className="tax">tax: ${tax.toFixed(2)}</p>
           <p className="total">total: ${total.toFixed(2)}</p>
-          <button className="cart-checkout">Continue to checkout</button>
+          <a href="checkout" className="cart-button-container">
+            <button className="cart-checkout">Continue to checkout</button>
+          </a>
         </div>
       </div>
     </div>

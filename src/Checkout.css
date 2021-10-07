@@ -1,0 +1,51 @@
+#checkout-page {
+  margin-top: 100px;
+}
+
+#payment-left {
+  display: flex;
+  flex-direction: column;
+}
+
+#payment-options {
+  width: 200px;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+  box-shadow: 1px 1px 0px #45556c;
+  padding: 5px;
+  margin-top: 3px;
+  font-size: 16px;
+  line-height: 21px;
+}
+#payment-options:hover {
+  background: linear-gradient(to right, #67c0f4 5%, #417a9b 95%);
+}
+
+.options {
+  background-color: #417a9b;
+}
+
+.options:focus {
+  outline: none !important;
+}
+
+.options:hover {
+  outline: none !important;
+  background: linear-gradient(to right, #67c1f5 5%, #417a9b 95%);
+}
+.input-checkout {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+  box-shadow: 1px 1px 0px #45556c;
+  width: 100px;
+  padding: 5px;
+  margin-top: 3px;
+  font-size: 16px;
+  line-height: 21px;
+}
