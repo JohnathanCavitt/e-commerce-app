@@ -5,3 +5,17 @@
   align-items: center;
   justify-content: center;
 }
+
+html,
+body,
+#app,
+#app > div {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+.app {
+  height: 100%;
+}
