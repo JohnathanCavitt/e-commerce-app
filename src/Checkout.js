@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Checkout.css";
 
 const Checkout = () => {
@@ -58,6 +58,9 @@ const Checkout = () => {
             <input type="text" className="input-checkout" autoComplete="off" />
           </div>
         </div>
+        <a href="thanks-page">
+          <button className="cart-checkout">Submit</button>
+        </a>
       </div>
     </div>
   );

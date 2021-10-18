@@ -11,21 +11,7 @@ function Navbar(props) {
             Home
           </a>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="news.asp">
-            News
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="contact.asp">
-            Contact
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="about.asp">
-            About
-          </a>
-        </li>
+
         <a href="cart" id="shopping-cart">
           <input
             type="image"

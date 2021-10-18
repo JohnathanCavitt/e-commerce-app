@@ -4,6 +4,7 @@ import Home from "./Home.js";
 import Cart from "./Cart.js";
 import Checkout from "./Checkout.js";
 import Navbar from "./Navbar.js";
+import ThankYou from "./ThankYou.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 let count1 = 0;
@@ -37,6 +38,9 @@ function App() {
           </Route>
           <Route path="/checkout" exact>
             <Checkout />
+          </Route>
+          <Route path="/thanks-page" exact>
+            <ThankYou />
           </Route>
         </Switch>
       </div>

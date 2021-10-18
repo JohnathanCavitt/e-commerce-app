@@ -1,0 +1,8 @@
+.page {
+  margin-top: 20%;
+  display: flex;
+  font-size: 50px;
+  color: #c6d4df;
+  align-items: center;
+  justify-content: center;
+}
